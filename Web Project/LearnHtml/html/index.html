@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Yasir">
+    <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML.">
+    <title>My First Web Page</title>
+    <link rel="icon" href="image/Html.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>My Goals for the Year</h1>
+
+        <nav aria-label="primary-navigation"> <!--Navigation within the page-->
+            <ul>    
+                <li>
+                    <a href="#html">Learning HTML</a> <!--linked a webpage using relative reference (href)-->
+                </li>
+                <li>
+                    <a href="#vacation">Planning a Vacation</a>     <!--Anker tab(<a>) clickable cursor-->
+                </li>
+                <li>
+                    <a href="#contact">Contact Me</a>  
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>    <!--horizontal rule-->
+    <main>
+        <article id="html">
+            <h2>I'm Ready to Learn HTML</h2>
+            <p><em>This is my first web page.</em></p>  <!--Italic (em)-->
+
+             <!--linked a webpage using relative reference-->
+             <p><a href="aboutme.html">About Me!</a></p>  
+
+            <section id="s1">  <!--Dividing into section and giving a name-->
+                <h3>HTML5</h3>
+                 <!--display image/ src= path alt=additional info(alt will show the name whether there exist an error)-->
+                <img src="image/Html.png" alt="HTML5 Logo" title="I am learning HTML5" width="300" height="300">
+                <figure>    <!--Figure element can use image and paragraph-->
+                    <figcaption>An Example of HTML5 code</figcaption>
+                    <p>
+                        <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+                    </p>
+                </figure>
+            </section>
+            <section>
+                <h3>My Daily Schedule</h3>
+                <p>Let me tell you how:</p>
+                <ol>     <!--ordered list-->
+                    <li>...I learn more about web dev.</li>
+                    <li>...I plan out my schedule.</li>
+                    <li>...I use resources from <abbr title="Mozilla Developer Network">
+                            <a href="https://developer.mozilla.org/">MDN</a>
+                        </abbr>.</li>
+                </ol>
+                <aside>     <!--Adding summary with an down arrow. Mark kry word highlight the word-->
+                    <details>
+                        <summary>Guess the <mark>number of hours</mark> I code per day</summary>
+                        <p>I start at <time datetime="08:00">8 am</time> and I write code for <time datetime="PT3H">3
+                                hours</time> every morning.</p>
+                    </details>
+                </aside>
+                <br>
+                <table>
+                    <caption>
+                         My Daily Schedule
+                    </caption>
+                    <thead>     <!--Table heading--> 
+                        <tr>
+                            <th>&nbsp;</th>
+                             <th scope="col">Time</th>       <!--Table heading--> 
+                             <th scope="col">Activity</th> 
+                         </tr>
+                    </thead>
+                    <tbody>
+                             <tr>  <!--Table row-->
+                                <th scope="row">Morning</th>
+                                <td> <time datetime="08:00">8Am</time>-<time datetime="11:00">11Am</time></td>   <!--Table row-->
+                                <td>write the code.</td>
+                            </tr>
+                            <tr>  <!--Table row-->
+                                <th scope="row">Break</th>
+                                <td> <time datetime="11:00">11Am</time>-<time datetime="12:00">12Pm</time></td>   <!--Table row-->
+                                <td>Lunch Break!</td>
+                            </tr>
+                            <tr>  <!--Table row-->
+                                <th scope="row">Afternoon</th>
+                                <td> <time datetime="12:00">12Apm</time>-<time datetime="06:00">6Pm</time></td>   <!--Table row-->
+                                <td>Study Time!</td>
+                            </tr>
+                            <tr>  <!--Table row-->
+                                <th scope="row">Evening</th>
+                                <td rowspan="2"> All other time</td>   <!--Table row-->
+                                <td>Free time</td>
+                            </tr>
+                            <tr>  <!--Table rows-->
+                                <th scope="row">Night</th>
+                                <td>Sleep</td>
+                            </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">
+                            Eat, Sleep, Code, Repeat.
+                            </td>
+                        </tr>
+                    </tfoot>
+                </table>
+
+            </section>
+        </article>
+
+        <hr>
+
+        <article id="vacation">
+            <h2>I Am Also Planning a Vacation</h2>
+            <p>I've been working hard and <em>really need a getaway</em>.</p>
+            <p>I live in <abbr title="Kansas">KS</abbr> so I want visit a beach.</p>
+
+            <section>
+                <h3>Places I'd Like to Visit</h3>
+                <ul>     <!--unordered list-->
+                    <li>
+                        <p>I've heard good things about the Caribbean.</p>
+                        <figure>
+                            <img src="image/Carribean.jpg" alt="Caribbean Beach"
+                                title="I want to visit a Caribbean beach." width="400" height="225" loading="lazy">
+                            <figcaption>
+                                Caribbean Beach Getaway
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li>
+                        <p>I've heard good things about going here:</p>
+                        <address>
+                            Margaritaville Island Reserve Riviera Cancún<br>
+                            Bahia Petempich Puerto Morelos, Mexico<br>
+                            Colonia Morelos, México 77580
+                        </address>
+                        <figure>
+                            <img src="image/vacation.jpg" alt="Cancun Vacation" title="It's 5 o'Clock Somewhere!"
+                                width="400" height="267" loading="lazy">
+                            <figcaption>
+                                A Caribbean Vacation Image
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+            </section>
+            <!-- TODO: Add more places -->
+            <section>
+                <h3>Places I Want to Avoid</h3>
+                <dl>     <!--dedtailed list/ for this we have to give Description Term(dt) then we have to give Description Details(dd)-->
+                    <dt>North Pole</dt>
+                    <dd>I hear this is <strong>cold</strong>!</dd>
+
+                    <dt>South Pole</dt>
+                    <dd>This is also cold.</dd>
+
+                    <dt>Mountain Tops</dt>
+                    <dd>These are also cold.</dd>
+                </dl>
+            </section>
+        </article>
+        <hr>
+        <article id="contact">
+            <h2>Contact Me:</h2>
+            <p>
+                Anything to clarify dont't be hesitate to contact.
+            </p>
+            <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+                <legend>Personal Info</legend>   <!-- Using to name a fieldset -->
+            <p>
+                <label for="firstName">First Name:</label>
+                 <!-- Autocomplete shows if already inserted the details
+                    Autofocus eliment used to focus the section.
+                required used to complete the part. without filling we cannot move further.-->
+                <input type="text" name="firstName" id="firstName" placeholder="eg:Yasir" autocomplete="on" required>
+            </p>
+            <p>
+                <label for="lastName">Last Name:</label>
+                  <input type="text" name="lastName" id="lastName" placeholder="eg:Zulfikar" autocomplete="on" required>
+            </p>
+            <p>
+                <label for="password">Password:</label>
+                  <input type="password" name="password" id="password" placeholder="eg:Your@pass11"  required>
+            </p>
+            <p>
+                <label for="phone">Phone No:</label>
+                  <input type="tel" name="phone" id="phone" placeholder="eg:94-771234567"  required
+                   pattern="[0-9]{2}-[0-9]{3}[0-9]{3}[0-9]{4}">
+            </p>
+            <p>
+                <label for="decade">Fav Decade:</label>
+                  <input type="number" name="decade" id="decade" min="1900" max="2020" 
+                  value="1980" step="10">    <!-- Step keyword used to decrease no of times-->
+            </p>
+            <p>
+               <label for="place"> Fav Place to visit:</label>
+               <select name="place" id="place" >        
+    <!-- Use multiple keyword after id to show multiple choices and size used to   show the  no.of. outputs to display on option.-->
+                <optgroup label="Asia">
+                    <option value="china">China</option>
+                     <option value="laos">Laos</option>
+                     <option value="singapore">Singapore</option>
+                     <option value="maldives">Maldives</option>
+                     <option value="japan">Japan</option>
+                     <option value="srilanka" selected>Sri Lanka</option>       <!-- Selected used to select a default selector.-->
+                </optgroup>
+                <optgroup label="Emirates">
+                    <option value="bahrain">Bahrain</option>
+                    <option value="jordan">Jordan</option>
+                    <option value="kuwait">Kuwait</option>
+                    <option value="oman">Oman</option>
+                    <option value="qatar">Qatar</option>
+                    <option value="saudi">Saudi Arabia</option>
+               </optgroup>
+               <optgroup label="Europe">
+                     <option value="france">France</option>
+                     <option value="spain">Spain</option>
+                     <option value="italy">Italy</option>
+                     <option value="turkey">Turkey</option>
+                    <option value="germany">Germany</option>
+                    <option value="uk">United Kingdom</option>
+                </optgroup>
+            </select>
+            </p> 
+
+         <!--    <p Alt+Shift+A>
+                <label for="place">Fav Place to visit:</label>
+                <input type="text" name="place" id="place" list="place-list">
+                <datalist id="place-list">
+                    <option value="china">
+                    <option value="srilanka" selected>
+                    <option value="jordan">
+                    <option value="oman">
+                    <option value="france">
+                    <option value="italy"> 
+
+            </p>   -->   
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Your Fav Food</legend>
+                <p>
+                    <input type="radio" name="food" id="chicken" value="chicken">
+                    <label for="chicken">Chicken</label>
+                </p>
+                <p>
+                    <input type="radio" name="food" id="mutton" value="mutton">
+                    <label for="mutton">Mutton</label>
+                </p>
+                <p>
+                    <input type="radio" name="food" id="fish" value="fish">
+                    <label for="fish">Fish</label>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Your Fav colour</legend>
+                <p>
+                    <input type="checkbox" name="colour" id="blue" value="blue">
+                    <label for="blue">Blue</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="colour" id="purple" value="purple">
+                    <label for="purple">Purple</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="colour" id="black" value="black">
+                    <label for="black">Black</label>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Send me a note!</legend>
+                <label for="message">Your Message:</label>
+                <p>
+                    <textarea name=" message" id="message" cols="30" rows="10" placeholder="Type your message"></textarea>
+                </p>
+            </fieldset>
+            <br>
+
+            <button type="submit">Submit</button> 
+            <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+            <button type="reset">Reset</button> 
+
+            
+
+            <br><br><br><br><br>
+
+            </form>
+
+        </article>
+    </main>
+    <hr>
+    <footer>
+        <p>
+            &lt;&lt;&lt; &copy; <a href="about.html">Yasir</a> &gt;&gt;&gt;
+        </p>
+        <p>
+            <a href="#">Back to Top</a>     <!--# tag is enough to back the top-->
+        </p>
+    </footer>
+</body>
+
+</html>
