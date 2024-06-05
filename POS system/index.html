@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HotCup POS System
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+
+            <h1> HotCup POS System</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="#order-processing">Order Processing</a></li>
+                <li><a href="#payment-handling">Payment Handling</a></li>
+                <li><a href="#table-management">Table Management</a></li>
+                <li><a href="#reporting">Reporting</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section id="order-processing" class="section">
+                <h2>Order Processing</h2>
+                <div class="order-interface">
+                    <div class="menu">
+                        <h3>Menu</h3>
+                        <ul>
+                            <li data-item="Coffee">Coffee - $3</li>
+                            <li data-item="Tea">Tea - $2</li>
+                            <li data-item="Sandwich">Sandwich - $5</li>
+                            <li data-item="Cake">Cake - $4</li>
+                        </ul>
+                    </div>
+                    <div class="order-details">
+                        <h3>Order Details</h3>
+                        <ul id="order-list">
+                         
+                        </ul>
+                        <div class="total">
+                            <p>Total: $<span id="total-amount">0</span></p>
+                        </div>
+                        <button id="place-order">Place Order</button>
+                    </div>
+                </div>
+            </section>
+            <section id="payment-handling" class="section">
+                <h2>Payment Handling</h2>
+                <div class="payment-interface">
+                    <h3>Choose Payment Method</h3>
+                   <button class="payment-btn" >
+                     <img src="card.png" alt="card payment" height="10px" width="15px">Credit Card</button>
+                    <button class="payment-btn">
+                        <img src="cash.jpg" alt="card payment" height="10px" width="15px">Cash</button>
+                    <button class="payment-btn">
+                        <img src="mobile.jpg" alt="card payment" height="10px" width="15px">Mobile Payment</button>
+                </div>
+            </section>
+            <section id="table-management" class="section">
+                <h2>Table Management</h2>
+                <div class="table-interface">
+                    <h3>Tables</h3>
+                    <div class="table-grid">
+                        <div class="table" data-table="1">Table 1</div>
+                        <div class="table" data-table="2">Table 2</div>
+                        <div class="table" data-table="3">Table 3</div>
+                        <div class="table" data-table="4">Table 4</div>
+                    </div>
+                </div>
+            </section>
+            <section id="reporting" class="section">
+                <h2>Reporting</h2>
+                <div class="report-interface">
+                    <h3>Sales Report</h3>
+                    <div class="report">
+                        <p>Total Sales: $<span id="total-sales">0</span></p>
+                        <p>Number of Orders: <span id="total-orders">0</span></p>
+                        <button id="generate-report">Generate Report</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
